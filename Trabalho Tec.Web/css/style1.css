@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* No CSS */
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+/*Registo*/
+#formulario, #formulario2 {
+  margin-left: 300px;
+  margin-top: 100px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: #b2dfdb;
+  border-radius: 25px;
+  color: #212121;
+}
+
+/* Comprimento completo nos campos */
+input[type=text], input[type=email], input[type=password] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Efeito quando passamos o mouse por cima dos campos */
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, textarea:hover {
+  background-color: #BDBDBD;
+  outline: none;
+}
+
+/* Botão de registar */
+.botãosubmit {
+  background-color: #BDBDBD;
+  color: #212121;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/*Quem somos*/
+.titulo {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.subtitulo {
+  color: #009688;
+}
+
+#sobre {
+  float: left;
+}
+
+#sobre span {
+  margin-left: 20px;
+}
+
+#contactos {
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40%;
+}
+
+#contactos span {
+  font-weight: bold;
+}
+
+#localização {
+  clear: both;
+}
+
+form h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#formulario select, #formulario2 select {
+  padding: 10px;
+}
+
+#equipa {
+  clear: both;
+}
+
+
+/* Slideshow container */
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow img {
+  width: 75%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: relative;
+  top: -371px;
+  left: 663px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: relative;
+  top: -371px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 75%;
+  text-align: center;
+  color: #212121;
+  background-color: #727272;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  position: relative;
+  left: -120px;
+  top: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Consultas*/
+#formulario2 .direita {
+  float: right;
+}
+
+#formulario2 .esquerda {
+  float: left;
+}
+
+#formulario2 select {
+  padding: 10px;
+}
+
+#formulario2 h3 {
+  clear: both;
+}
+
+#formulario2 span {
+  color: #727272;
+  font-size: small;
+}
+
+form input {
+  font-size: 18px;
+  clear: both;
+}
+

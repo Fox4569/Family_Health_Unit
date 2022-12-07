@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="registo.css" rel="stylesheet"> 
+    <script src="registo.js" defer></script>
+  </head>
+  <body>
+    <form class="form-registo" id="form-registo" name="registo" method="post">
+      <h1 class="registoh1">Registo de conta</h1>
+      <div class="registo-form-container">
+      <hr/>
+      <div class="registo-container">
+        <label for="name"><strong>Nome Próprio</strong></label>
+        <input type="text" placeholder="Nome Próprio" name="name" id="name" required>
+        <label for="surname"><strong>Sobrenome</strong></label>
+        <input type="text" placeholder="Sobrenome" name="surname" id="surname" required>
+        <label for="email"><strong>Email</strong></label>
+        <input type="text" placeholder="Email" name="email" id="email" required>
+        <label for="name"><strong>Nome de Utilizador</strong></label>
+        <input type="text" placeholder="Nome de Utilizador" name="username" id="username" required>
+        <label for="password"><strong>Palavra-Passe</strong></label>
+        <input type="password" placeholder="Palavra-Passe" name="password" id="password" required>
+      </div>
+      <input type="submit" class="submit-registo" value="Registar" id="submit-registo" onclick="registo()">
+
+      <div class="login-container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        Já se registou? Clique <a href="Login.html">aqui</a>.
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

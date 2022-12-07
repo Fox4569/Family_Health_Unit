@@ -1,0 +1,71 @@
+html, body {
+      display: flex;
+      justify-content: center;
+      font-family: 'Staatliches', cursive;
+      font-size: 15px;
+      margin-top: 100px;
+      }
+
+      .form-registo {
+      border: 5px solid #33383b;
+      }
+
+      .registo-container input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-family: 'Staatliches', cursive;
+      }
+
+      .submit-registo {
+      background-color: #009688;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      font-family: 'Staatliches', cursive;
+      }
+
+      .registoh1 {
+      text-align:center;
+      font-size:18;
+      }
+
+      .submit-registo:hover {
+      opacity: 0.8;
+      }
+
+      .registo-form-container {
+      text-align: left;
+      margin: 24px 50px 12px;
+      width: 400px;
+      }
+
+      .registo-container {
+      padding: 16px 0;
+      text-align:left;
+      }
+
+      span.login {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+
+      .login-container {
+            padding: 16px 0;
+            text-align:left;
+      }
+      
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 500px) {
+      span.login {
+      display: block;
+      float: none;
+      }
+      }

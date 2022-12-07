@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link href="consultasstyle.css" rel="stylesheet">
+    <link href="menustyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body class="body-menu">
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+        <a href="Index.html" class="logo">USF Serpins</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+              <div class="dropdown">
+              <a href="Menu.html" class="nav-links">Quem somos</a>
+              <div class="dropdown-content">
+                <a href="Menu.html#flex-mve">Missão, Visão e Valores</a>
+                <a href="Menu.html#equipa">Equipa</a>
+                <a href="Menu.html#contactos-horarios">Contactos</a>
+                <a href="Menu.html#contactos-horarios">Horários</a>
+                <a href="Menu.html#localizacao">Localização</a> 
+                <a href="Contactar.html">Fale Connosco</a> 
+              </div>
+            </div>    
+            </li>
+            <li>
+              <div class="dropdown">
+                <a href="O_que_fazemos.html" class="nav-links">O que fazemos</a>
+                <div class="dropdown-content">
+                  <a href="Consultas.html">Consultas</a>
+                </div>
+              </div>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Covid-19</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a href="#" class="nav-links">Mais Informações</a>
+                <div class="dropdown-content">
+                  <a href="Indicadores.html">Indicadores</a>
+                  <a href="Recursos.html">Recursos</a>
+                  <a href="Mais_Apoios.html">Mais Apoios</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="Login.html" class="button-entrar" >Iniciar Sessão</a>
+            </li>
+        </ul>
+  </nav>
+      <main class="main-div-consultas">
+      <div class="main-title"></div>
+      <div class="main-title-span"><span>MARQUE A SUA CONSULTA</span></div>
+
+      <div class="container-consultas"></div>
+      
+      <form class="form-consultas-form"  action="mailto:usf.serpins@gmail.com" method="post"> 
+      <br>
+      <label class="primeiro-nome">Primeiro Nome:</label><br>
+      <input class="input-primeiro-nome" type="text" name="primeiro" placeholder="Digite o seu primeiro nome..." required autofocus size="50"/><br>
+      <label class="ultimo-nome">Último Nome:</label><br>
+      <input class="input-ultimo-nome" type="text" name="ultimo" placeholder="Digite o seu último nome..." required size="50"/><br>
+      <label class="idade">Idade:</label><br>
+      <input class="input-idade" type="text" name="idade" placeholder="Digite a sua idade..." required size="50"/><br>
+      <label class="cc">Nº de cartão de cidadão:</label><br>
+      <input class="input-cc" type="text" name="cc" placeholder="Digite o seu nº de cartão de cidadão..." required size="50"/><br>
+      <label class="email">Email:</label><br>
+      <input class="input-email" type="text" name="email" placeholder="Digite o seu email..." required size="50"/><br>
+      <label class="morada">Morada:</label><br>
+      <input class="input-morada" type="text" name="morada" placeholder="Digite a sua morada..." required size="50"/><br>
+      <label class="medico-select-box">Escolha o seu médico:</label><br>
+      <select class="select-medico"name="medico">
+        <option value="1">Joana Fernandes</option>
+        <option value="2">Jorge Rodrigues</option>
+        <option value="3">Luísa Ramos</option>
+        <option value="4">Paula Braga da Cruz</option>
+        <option value="5">Paulo Costa</option>
+     </select><br><br><br>
+     <label class="comentario-div">Escreva um comentário: (opcional)</label><br>
+     <textarea class="textarea-comentario" name="texto" rows="10" cols="68" placeholder="Escreva aqui..."></textarea><br><br><br>
+    <input class="input-submeter-consultas-botao" type="submit" value="Enviar" name="botao-submeter-consulta">
+    </form>
+  </main>
+</body>
+</html>

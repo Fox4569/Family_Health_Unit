@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* No CSS */
+body {
+  font-family: 'Staatliches', cursive;
+}
+
+.main-div-consultas {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: 70px 150px 1060px; /**/ 
+                       /* no caso de querer repetir as dimensoes, grid-template-rows:repeat(3, 50px); */ 
+  grid-column-gap: 20px;
+}
+
+/* Comprimento completo nos campos */
+input[type=text] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+ 
+  padding: 15px;
+  margin: 5px 0 22px 0;
+
+}
+
+/* Efeito quando passamos o mouse por cima dos campos */
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, textarea:hover {
+  background-color: #BDBDBD;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+.div-h2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color:#212121;
+}
+
+.main-title{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(34, 34, 34);
+  
+}
+
+.main-title-span {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 40px;
+  color:white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.form-consultas-form {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.container-consultas {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #b2dfdb;
+}
+
+.primeiro-nome {
+  padding-right: 240px;
+  padding-top: 20px;
+}
+
+.input-primeiro-nome {
+
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+
+.ultimo-nome {
+
+  padding-right: 255px;
+  padding-top: 10px;
+}
+
+.input-ultimo-nome {
+
+  margin-top: 20px;
+  width: 40%;
+  padding-left: 140px;
+  padding-top: 10px;
+}
+
+.idade {
+ 
+  padding-right: 290px;
+  padding-top: 10px;
+  
+}
+
+.input-idade {
+ 
+  margin-top: 20px;
+  width: 40%;
+  padding-left: 40px;
+  padding-top: 10px;
+  
+}
+
+.cc {
+ 
+  padding-right: 180px;
+  padding-top: 10px;
+}
+
+.input-cc {
+ 
+  margin-top: 20px;
+  width: 40%;
+  padding-left: 140px;
+  padding-top: 10px;
+}
+
+.email {
+  
+  padding-right: 290px;
+  padding-top: 10px;
+  
+}
+
+.input-email {
+ 
+  margin-top: 20px;
+  width: 40%;
+  padding-left: 40px;
+  padding-top: 10px;
+  
+}
+
+.morada {
+
+  padding-right: 280px;
+  padding-top: 10px;
+}
+
+.input-morada {
+
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+
+.medico-select-box {
+  padding-top: 10px;
+}
+
+.select-medico {
+
+  
+  height: 30px;
+  width: 25%;
+  font-family: 'Staatliches', cursive;
+  padding-left: 80px;
+}
+
+.comentario-div {
+ 
+  padding-right: 275px;
+  margin-top: 30px;
+}
+
+input::placeholder
+{
+    font-family: 'Staatliches', cursive;
+    
+}
+
+input {
+  border: 5px solid #33383b;
+  border-radius: 0px;
+  outline: none;
+}
+select {
+  border: 5px solid #33383b;
+  outline: none;
+}
+textarea  
+{  
+   font-family: 'Staatliches', cursive;  
+   font-size: 12px;   
+   border: 5px solid #33383b;
+   outline:none;
+}
+
+.input-submeter-consultas-botao{
+  width:20%;
+  height: 40px;
+  font-family: 'Staatliches', cursive; 
+  outline:none;
+}
+
+.input-submeter-consultas-botao:hover {
+  background-color: #BDBDBD;
+}
+
+@media (max-width:900px){
+	footer { position: static; }
+  header { padding-top:40px; }
+  .main-div-consultas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 150px 1020px; /**/ 
+                         /* no caso de querer repetir as dimensoes, grid-template-rows:repeat(3, 50px); */ 
+    grid-column-gap: 20px;
+  }
+  .div-h2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:#212121;
+  }
+  
+  .main-title{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(34, 34, 34);
+    
+  }
+  
+  .main-title-span {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 40px;
+    color:white;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .form-consultas-form {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+  }
+
+  .container-consultas {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: #b2dfdb;
+  }
+  .input-primeiro-nome {
+
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 40px;
+    padding-top: 10px;
+  }
+  .input-ultimo-nome {
+  
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 140px;
+    padding-top: 10px;
+  }
+  .input-idade {
+   
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+  .input-cc {
+   
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 140px;
+    padding-top: 10px;
+  }
+  .input-email {
+   
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 40px;
+    padding-top: 10px;
+    
+  }
+  .input-morada {
+  
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 40px;
+    padding-top: 10px;
+  }
+  
+  .medico-select-box {
+    padding-top: 10px;
+  }
+  
+  .select-medico {
+    height: 30px;
+    width: 25%;
+    font-family: 'Staatliches', cursive;
+    padding-left: 0;
+  }
+  
+  .comentario-div {
+   
+    padding-right: 125px;
+    margin-top: 30px;
+  }
+}

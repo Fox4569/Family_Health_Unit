@@ -1,0 +1,244 @@
+@charset "UTF-8";
+body {
+  font-family: 'Staatliches', cursive;
+}
+
+.ocupar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 1000px;
+      grid-template-rows: 70px 1000px;
+}
+
+.container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+a {
+  color: #009688;
+}
+
+a:hover {
+  color: #ffc107;
+}
+
+.main img {
+  width: 100%;
+}
+
+#layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 1fr 1fr 1fr 70px;
+      grid-template-columns: 70px 1fr 1fr 1fr 70px;
+}
+
+.main .subtitulo {
+  font-size: 25px;
+}
+
+.primeira-texto {
+  position: relative;
+  left: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#primeira {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+#segunda {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+#terceira {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.imagens {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 1fr 1fr 1fr 70px;
+      grid-template-columns: 70px 1fr 1fr 1fr 70px;
+  grid-gap: 100px;
+  width: 100%;
+}
+
+.img1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 400px;
+  position: relative;
+  left: 105px;
+}
+
+.img2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  width: 400px;
+  position: relative;
+  left: 100px;
+  top: -15px;
+}
+
+.img3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  width: 400px;
+  position: relative;
+  left: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+/*Sensibilização*/
+.titulo {
+  color: #ffc107;
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#container {
+  width: 600px;
+  position: relative;
+  left: 655px;
+  text-align: center;
+}
+
+.imagem1 {
+  float: left;
+  width: 30%;
+  position: relative;
+  top: -510px;
+  left: 20px;
+  border: 5px solid #33383b;
+}
+
+.imagem2 {
+  float: right;
+  width: 30%;
+  position: relative;
+  top: -510px;
+  left: -20px;
+  border: 5px solid #33383b;
+}
+
+.imagem-hpv {
+  float: left;
+  width: 30%;
+  position: relative;
+  top: -580px;
+  left: 20px;
+}
+
+/*Vacinação*/
+.imagem-vacina {
+  position: relative;
+  left: -90px;
+  border: 5px solid #33383b;
+}
+
+/*Diabetes*/
+span {
+  color: #ffc107;
+}
+
+.imagem-diabetes {
+  width: 80%;
+  position: relative;
+  left: -650px;
+  top: -800px;
+}
+
+.imagem2-diabetes {
+  width: 80%;
+  position: relative;
+  top: -1250px;
+  left: 650px;
+}
+
+/*Mais Apoio*/
+.container {
+  background-color: #009688;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: 3px black solid;
+  text-align: center;
+  margin: 24px 50px 12px;
+  width: 1000px;
+  position: relative;
+  left: 400px;
+  top: 100px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 18;
+  color: #ffc107;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*Recursos*/
+h3 {
+  text-align: center;
+  color: #757575;
+}
+
+.imagem-covid1 {
+  position: relative;
+  left: 280px;
+  top: 10px;
+}
+
+.imagem-covid2 {
+  position: relative;
+  left: 280px;
+  top: -31px;
+}
+/*# sourceMappingURL=oquefazemostyle.css.map */

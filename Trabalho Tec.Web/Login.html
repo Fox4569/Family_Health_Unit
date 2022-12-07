@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="login.css" rel="stylesheet"> 
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <form class="form-login" name="login">
+      <h1 class="loginh1">Início de Sessão</h1>
+      <div class="login-form-container">
+      <hr/>
+      <div class="login-container">
+        <label for="name"><strong>Nome de Utilizador</strong></label>
+        <input type="text" placeholder="Nome de Utilizador" name="username" id="username" required>
+        <label for="password"><strong>Palavra-Passe</strong></label>
+        <input type="password" placeholder="Palavra-Passe" name="password" id="password" required>
+      </div>
+      <input type="button" class="submit-login" value="Login" id="submit-login" onclick="validate()">
+      <div class="login-container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Lembrar utilizador
+        </label>
+        <span class="register"><a href="Registo.html"> Registar</a></span>
+      </div>
+    </form>
+  </body>
+</html>

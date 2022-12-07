@@ -1,0 +1,469 @@
+.main-div-index {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 70px 300px 300px /**/ 
+                      100px 200px 150px 20px /**/ 
+                      50px 250px 250px 50px /**/ 
+                      50px 500px 50px  /**/ 
+                      50px 400px 80px; /* no caso de querer repetir as dimensoes, grid-template-rows:repeat(3, 50px); */ 
+  grid-column-gap: 20px;
+
+}
+ 
+/* 1ª PARTIÇÃO */
+.main-div-container {
+  grid-column: 2/6;
+  grid-row: 2/4;
+  width: 100%;
+}
+
+.banner-index {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-div-conteudo-titulo {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  padding-top: 130px;
+  font-size: 62px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.span1-titulo {
+  color: #009688;
+}
+
+.span2-titulo {
+  color: rgb(255, 255, 255);
+}
+
+.main-div-conteudo-text {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.button-appointment {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  grid-column: 2;
+  grid-row: 3;
+  border: 2px solid #33383b;
+  width: 170px;
+  height: 35px;
+  padding: 4px;
+  margin-left: 50px;
+  margin-top: 80px;
+  cursor: pointer;
+  outline:none;
+  background-color: white;
+  text-decoration: none;
+  color:black; /* Obrigatorio pois o .button-entrar:visited não funciona */
+}
+
+.button-appointment:hover {
+    background-color: #717171;
+    transition-duration: 0.4s;
+    color:black;
+}
+
+/* 2º PARTIÇÃO */
+
+.main-div-container-covid {
+  grid-column: 2/6;
+  grid-row: 4/8;
+  background-color: white;
+}
+
+.covid19-titulo-index {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+/* COLOCAÇÃO IMAGEM "COVID.PNG" */
+.covid19-titulo-index-imagem1 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  text-align:center;
+}
+
+.imagem-covid19-index {
+  height: 120px;
+  width: 120px;
+  margin-top:65px;
+  border: 5px solid #33383b;
+  padding: 10px;
+}
+
+/* COLOCAÇÃO IMAGEM "COUGH.PNG" */
+.covid19-titulo-index-imagem2 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  text-align:center;
+}
+
+.imagem-cough-index {
+  height: 120px;
+  width: 120px;
+  margin-top:65px;
+  border: 5px solid #33383b;
+  padding: 10px;
+}
+
+/* COLOCAÇÃO IMAGEM "MASK.PNG" */
+.covid19-titulo-index-imagem3 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  text-align:center;
+}
+
+.imagem-mask-index {
+  height: 120px;
+  width: 120px;
+  margin-top:65px;
+  border: 5px solid #33383b;
+  padding: 10px;
+}
+
+/* COLOCAÇÃO IMAGEM "SUPPORT.PNG" */
+.covid19-titulo-index-imagem4 {
+  grid-column: 5/6;
+  grid-row: 5/6;
+  text-align:center;
+}
+
+.imagem-support-index {
+  height: 120px;
+  width: 120px;
+  margin-top:65px;
+  border: 5px solid #33383b;
+  padding: 10px;
+}
+
+/* TITULOS PARA AS IMAGENS */
+/* TITULO VIRUS */
+.covid19-titulo-index-titulo1 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  text-align:center;
+}
+
+.span-virus {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  text-align:center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* TITULO SINTOMAS */
+.covid19-titulo-index-titulo2 {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  text-align:center;
+}
+
+.span-sintomas {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  text-align:center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* TITULO PREVENÇÕES */
+
+.covid19-titulo-index-titulo3 {
+  grid-column: 4/5;
+  grid-row: 6/7;
+  text-align:center;
+}
+
+.span-prevent {
+  grid-column: 4/5;
+  grid-row: 6/7;
+  text-align:center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* TITULO MAIS INFO */
+
+.covid19-titulo-index-titulo4 {
+  grid-column: 5/6;
+  grid-row: 6/7;
+  text-align:center;
+}
+
+.span-info {
+  grid-column: 5/6;
+  grid-row: 6/7;
+  text-align:center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button-covid19 {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  grid-column: 5;
+  grid-row: 6;
+  border: 2px solid #33383b;
+  width: 185px;
+  height: 35px;
+  padding: 4px;
+  margin-left: 100px;
+  margin-top: 80px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  color:black; /* Obrigatorio pois o .button-entrar:visited não funciona */
+}
+
+.button-covid19:hover {
+  background-color: #717171;
+  transition-duration: 0.4s;
+  color:black;
+}
+
+
+
+/* 3º PARTIÇÃO */
+
+.main-div-container-equipa {
+  grid-column: 2/6;
+  grid-row: 8/12;
+  background-color: #f4f8fb;
+}
+
+/* IMAGEM EQUIPA */
+
+.equipa-foto-index {
+  grid-column: 3/4;
+  grid-row: 9/10;
+  text-align:center;
+}
+
+.imagem-equipa-index {
+  height: 250px;
+  width: 390px;
+  object-fit: fill;
+  border: 5px solid #33383b;
+  border-bottom:none;
+}
+
+.equipa-background-index {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  background-color: white;
+  border: 5px solid #33383b;
+  border-top:none;
+}
+
+.equipa-titulo1-index {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  text-align:center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.equipa-titulo2-index {
+  grid-column: 4/5;
+  grid-row: 10/11;
+  text-align:center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.equipa-texto-index {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  text-align:center;
+  margin-top: 100px;
+}
+
+.equipa-texto2-index {
+  grid-column: 4/5;
+  grid-row: 9/10;
+  text-align:center;
+  padding: 60px;
+}
+
+.button-equipa {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  grid-column: 4;
+  grid-row: 10;
+  border: 2px solid #33383b;
+  width: 170px;
+  height: 35px;
+  padding: 4px;
+  margin-left: 110px;
+  margin-top: 160px;
+  cursor: pointer;
+  outline:none;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  color:black; /* Obrigatorio pois o .button-entrar:visited não funciona */
+}
+
+.button-equipa:hover {
+  background-color: #717171;
+  transition-duration: 0.4s;
+  color:black;
+}
+
+/* 4ª PARTIÇÃO */
+
+.main-div-container-informacoes-uteis {
+  grid-column: 2/6;
+  grid-row: 12/15;
+  background-color: white;
+}
+
+.informacoes-uteis-titulo-index {
+  grid-column: 3/5;
+  grid-row: 13;
+  text-align:center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.informacoes-uteis-foto-index {
+  grid-column: 3;
+  grid-row: 13;
+  text-align:center;
+  height: 20px;
+  width: 18px;
+}
+
+.informacoes-uteis-foto-index img{
+  height: 400px;
+  width: 398px;
+  margin-top: 150px;
+}
+
+.accordion-informacoes-uteis-container {
+  margin-left: 40px;
+  margin-top: 150px;
+  grid-column: 4/6;
+  grid-row: 13;
+}
+
+.accordion-informacoes-uteis {
+  font-family: 'Staatliches', cursive;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  padding-top: 13px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border: 5px solid #33383b;
+  border-bottom: 2.5px solid #33383b;
+  border-top: 2.5px solid #33383b;
+}
+
+.activeaccordion, .accordion-informacoes-uteis:hover {
+  background-color: #ccc; 
+}
+
+.panel-informacoes-uteis {
+  font-family: 'Staatliches', cursive;
+  width:80%;
+  padding: 0 18px;
+  display: none;
+  background-color: #717171;
+  color:white;
+  border: 5px solid #33383b;
+  border-bottom: 2.5px solid #33383b;
+  border-top: 2.5px solid #33383b; 
+  overflow: hidden;
+}
+
+.accordion-informacoes-uteis:target .panel-informacoes-uteis {
+  display: block;
+}
+
+/* 5ª PARTIÇÃO */
+
+.main-div-container-indicadores {
+  grid-column: 2/6;
+  grid-row: 15/18;
+  background-color:#f4f8fb;
+}
+
+.imagem-indicadores {
+  
+  padding-left: 100px;
+  grid-column: 2/4;
+  grid-row: 16/17;
+  object-fit: cover;
+}
+
+.imagem-indicadores img {
+  border: 5px solid #33383b; 
+}
+
+.div-span-indicadores-titulo {
+  grid-column: 4/6;
+  grid-row: 16/17;
+  font-size: 32px;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+
+.div-span-indicadores-texto {
+  grid-column: 4/6;
+  grid-row: 16/17;
+  font-size: 20px;
+  padding-left: 60px;
+  padding-top: 180px;
+}
+
+.button-indicadores {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  grid-column: 4/6;
+  grid-row: 16/17;
+  border: 2px solid #33383b;
+  width: 170px;
+  height: 35px;
+  padding: 4px;
+  margin-left: 60px;
+  margin-top: 320px;
+  cursor: pointer;
+  outline:none;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  color:black; /* Obrigatorio pois o .button-entrar:visited não funciona */
+}
+
+.button-indicadores:hover {
+  background-color: #717171;
+  transition-duration: 0.4s;
+  color:black;
+}

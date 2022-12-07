@@ -1,0 +1,439 @@
+.main-div-indicadores {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 70px 120px 80px 200px 200px 50px
+                        80px 200px 200px 50px
+                        80px 200px 200px 50px;
+    grid-column-gap: 20px;
+}
+
+.main-title{
+    grid-column: 2/6;
+    grid-row: 2/3;
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.main-title-span {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    margin-top: 40px;
+    color:white;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+/* 2º INDICADOR */
+
+
+.container-indicador-pizza {
+    grid-column: 2/6;
+    grid-row: 3/7;
+    background-color: white;
+}
+
+.indicador-pizza {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 4/7;
+    grid-row: 4/7;
+    margin-left: 80px;
+}
+
+#piechart{
+width: 72%; 
+height: 400px;
+border: 5px solid #33383b;
+}
+
+.indicador-pizza-titulo {
+    margin-top: 20px;
+    grid-column: 4/6;
+    grid-row: 3/4;
+    text-align:center;
+    font-size: 30px;
+}
+
+
+
+
+
+/* 1º INDICADOR */
+
+.indicador-pizza2 {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 2/4;
+    grid-row: 4/7;
+    margin-left: 40px;
+}
+
+#piechart2{
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+}
+
+.indicador-pizza-titulo2 {
+    margin-top: 20px;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    text-align:center;
+    font-size: 30px;
+}
+
+
+.container-indicador-pizza2 {
+    grid-column: 2/6;
+    grid-row: 7/11;
+    background-color:#f4f8fb
+}
+
+
+/* 3º INDICADOR */
+
+.indicador-pizza3 {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 2/4;
+    grid-row: 8/9;
+    margin-left: 40px;
+}
+
+#piechart3{
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+}
+
+.indicador-pizza-titulo3 {
+    margin-top: 20px;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    text-align:center;
+    font-size: 30px;
+}
+
+
+
+/* 4º INDICADOR */
+
+.indicador-pizza4 {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 4/6;
+    grid-row: 8/9;
+    margin-left: 80px;
+}
+
+#piechart4{
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+    
+}
+
+.indicador-pizza-titulo4 {
+    margin-top: 20px;
+    grid-column: 4/6;
+    grid-row: 7/8;
+    text-align:center;
+    font-size: 30px;
+}
+
+
+
+.container-indicador-pizza3 {
+    grid-column: 2/6;
+    grid-row: 11/15;
+    background-color:white;
+}
+
+
+/* 5º INDICADOR  */
+
+
+.indicador-pizza5 {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 2/4;
+    grid-row: 12/13;
+    margin-left: 40px;
+}
+
+#piechart5{
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+    
+}
+
+.indicador-pizza-titulo5{
+    margin-top: 20px;
+    grid-column: 2/4;
+    grid-row: 11/12;
+    text-align:center;
+    font-size: 30px;
+}
+
+
+/* 6º INDICADOR  */
+
+
+.indicador-pizza6 {
+    padding: 20px;
+    /*padding-bottom: 0px;
+    padding-right: 0;*/
+    grid-column: 4/6;
+    grid-row: 12/13;
+    margin-left: 80px;
+}
+
+#piechart6 {
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+    
+}
+
+.indicador-pizza-titulo6 {
+    margin-top: 20px;
+    grid-column: 4/6;
+    grid-row: 11/12;
+    text-align:center;
+    font-size: 30px;
+}
+
+@media (max-width:1500px){
+	footer { position: static; }
+    header { padding-top:40px; }
+    
+    .main-div-indicadores {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: 30px 160px 90px 200px 200px 50px /* 1 a 7 */
+        100px 200px 200px 50px /* 7 à 11 */
+        150px 200px 200px 50px /* 11 à 15 */
+        150px 200px 200px 50px /* 15 a 19 */
+        90px 200px 200px 50px /* 19 a 23 */
+        90px 200px 200px 50px /* 23 a 27 */
+                            ;
+        grid-column-gap: 20px;
+    }
+    
+    .main-title{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        background-color: rgb(34, 34, 34);
+        
+    }
+    
+    .main-title-span {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-top: 40px;
+        color:white;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    
+    
+    /* 2º INDICADOR */
+    
+    
+    .container-indicador-pizza {
+        grid-column: 1/5;
+        grid-row: 3/11;
+        background-color: white;
+    }
+    
+    .indicador-pizza {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 8/10;
+        margin-left: 60px;
+    }
+    
+    #piechart{
+    width: 86%; 
+    height: 400px;
+    border: 5px solid #33383b;
+    }
+    
+    .indicador-pizza-titulo {
+        margin-top: 20px;
+        grid-column: 2/4;
+        grid-row: 6/7;
+        text-align:center;
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    
+    
+    
+    
+    
+    /* 1º INDICADOR */
+    
+    .indicador-pizza2 {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 4/5;
+        margin-left: 60px;
+    }
+    
+    #piechart2{
+        width: 86%; 
+        height: 400px;
+        border: 5px solid #33383b;
+    }
+    
+    .indicador-pizza-titulo2 {
+        margin-top: 30px;
+        grid-column: 2/4;
+        grid-row: 3/4;
+        text-align:center;
+        font-size: 25px;
+    }
+    
+    
+    .container-indicador-pizza2 {
+        grid-column: 1/5;
+        grid-row: 11/19;
+        background-color:#f4f8fb
+    }
+    
+    
+    /* 3º INDICADOR */
+    
+    .indicador-pizza3 {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 12/14;
+        margin-left: 60px;
+    }
+    
+    #piechart3{
+        width: 86%; 
+        height: 400px;
+        border: 5px solid #33383b;
+    }
+    
+    .indicador-pizza-titulo3 {
+        margin-top: 20px;
+        grid-column: 2/4;
+        grid-row: 11/12;
+        text-align:center;
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    
+    
+    
+    /* 4º INDICADOR */
+    
+    .indicador-pizza4 {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 16/18;
+        margin-left: 60px;
+    }
+    
+    #piechart4{
+        width: 86%; 
+        height: 400px;
+        border: 5px solid #33383b;
+        
+    }
+    
+    .indicador-pizza-titulo4 {
+        margin-top: 20px;
+        grid-column: 2/4;
+        grid-row: 15/16;
+        text-align:center;
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    
+    
+    
+    .container-indicador-pizza3 {
+        grid-column: 1/5;
+        grid-row: 19/27;
+        background-color:white;
+    }
+    
+    
+    /* 5º INDICADOR  */
+    
+    
+    .indicador-pizza5 {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 20/22;
+        margin-left: 60px;
+    }
+    
+    #piechart5{
+        width: 86%; 
+        height: 400px;
+        border: 5px solid #33383b;
+        
+    }
+    
+    .indicador-pizza-titulo5{
+        margin-top: 20px;
+        grid-column: 2/4;
+        grid-row: 19/20;
+        text-align:center;
+        font-size: 30px;
+        padding-top: 20px;
+
+    }
+    
+    
+    /* 6º INDICADOR  */
+    
+    
+    .indicador-pizza6 {
+        padding: 20px;
+        /*padding-bottom: 0px;
+        padding-right: 0;*/
+        grid-column: 1/5;
+        grid-row: 24/26;
+        margin-left: 60px;
+    }
+    
+    #piechart6 {
+        width: 86%; 
+        height: 400px;
+        border: 5px solid #33383b;
+        
+    }
+    
+    .indicador-pizza-titulo6 {
+        margin-top: 40px;
+        grid-column: 2/4;
+        grid-row: 23/24;
+        text-align:center;
+        font-size: 30px;
+    }
+}
